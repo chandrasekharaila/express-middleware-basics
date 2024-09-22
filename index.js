@@ -22,7 +22,7 @@ const studentidmiddleware = (req, res, next) => {
   next();
 };
 
-app.use(
+app.get(
   "/marks/:studentId",
   userMiddleware,
   studentidmiddleware,
